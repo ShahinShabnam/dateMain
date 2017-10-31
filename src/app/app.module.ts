@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { SampleModule,SampleComponent,SampleService } from 'datepackage';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SampleModule
   ],
-  providers: [],
+  providers: [SampleComponent,SampleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
